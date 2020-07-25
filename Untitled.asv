@@ -1,0 +1,12 @@
+I=imread('广东.jpg');%读取图像
+figure();  subplot(1,2,1),imshow(I), title('原始图像');
+I1=rgb2gray(I);%转化为灰度图像
+subplot(1,2,2),imshow(I1),title('灰度图像');
+
+I2=imadjust(I1);
+subplot(1,2,1),imshow(I1),title('增强前灰度图像');
+subplot(1,2,2),imshow(I2),title('增强后灰度图像');
+
+I3=edge(I1,'robert',0.09,'both');%采用robert算子进行边缘检测
+subplot(3,2,3),imshow(I2),title('边缘检测后图像');
+
