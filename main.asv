@@ -1,8 +1,3 @@
-%==========================================================
-% Written for the task of Automatic Vehicle Licence Plate Recognition
-% Yao Yeboah Junior - ECE2011
-% South China University of Technology
-%===========================================================
 
 %main function
 clc
